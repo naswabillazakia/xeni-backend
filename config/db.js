@@ -2,7 +2,7 @@ module.exports = {
     HOST: 'localhost',
     USER: 'root',
     PASSWORD: '',
-    DB: 'quizapi',
+    DB: 'xeni-database',
     dialect: 'mysql',
     pool: {
         max: 5,

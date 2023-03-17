@@ -21,5 +21,6 @@ db.sequelize = sequelize;
 
 // define semua moduls yang ada pada aplikasi semua tabel atau content
 db.quizzes = require('./quiz')(sequelize,Sequelize);
+db.kata = require('./kata')(sequelize,Sequelize);
 module.exports = db;
 
