@@ -97,7 +97,7 @@ exports.getByCategory = async (req,res)=> {
    const id = req.params.id
    const quizzes = await Quiz.findAll({
        where : {
-           category : id
+           categoryId : id
        }
    }) 
    res.json ({
@@ -107,14 +107,13 @@ exports.getByCategory = async (req,res)=> {
 }
 
 // menampilkan atau mengambil semua data quiz berdasarkan level tertentu
-exports.getByQuizId = async (req, res)=> {
+exports.getByLevelId = async (req, res)=> {
     const id = req.params.id
     const quizzes = await Quiz.findAll({
         where: {
-             QuizId : id
+             LevelId : id
         }
-
-        
+ 
     })
     res.json ({
         message: `Quizzes retrived successfully with LevelId=${id}.`,

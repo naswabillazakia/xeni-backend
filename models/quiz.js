@@ -21,9 +21,9 @@ module.exports = (sequelize, Sequelize) => {
       categoryId:{
           type: Sequelize.INTEGER
       },
-      quizId:{
-          type: Sequelize.INTEGER
-      },
+      levelId:{
+          type: Sequelize.STRING
+      }
 
       
   });

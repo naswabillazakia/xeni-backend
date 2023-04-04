@@ -17,7 +17,7 @@ app.get('/', (req,res)=> {
     res.send('Hello Xerapan Indo')
 });
 
-app.use('/api/quizzes', quizRoute)
+app.use('/api/quiz', quizRoute)
 app.use('/api/jobsheet', jobsheetRoute)
 app.use('/api/kata', kataRoute)
 
