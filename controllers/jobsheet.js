@@ -1,9 +1,8 @@
 const { where } = require("sequelize");
 const db = require("../models");
-const Quiz = require("../models/quiz");
-const quiz = db.quizzes;
+const Quiz = db.quizzes;
 
-exports.submitONe = async (req,res) => {
+exports.submitOne = async (req,res) => {
     //data yang didapatkan dari inputan oleh pengguna 
     const jobsheet = {
         quizId: req.body.quizId,
@@ -11,7 +10,7 @@ exports.submitONe = async (req,res) => {
     };
 
     try {
-        var quiz = await quiz.findOne({
+        var quiz = await Quiz.findOne({
             where: {
                 id: req.body.quizId
             }
